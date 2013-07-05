@@ -1,0 +1,124 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="HonestWeatherApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DataContext="{d:DesignData SampleData/MainViewModelSampleData.xaml}"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+
+        <Image Source="/Curtains.jpg" Stretch="Fill"/>
+
+        <phone:Pivot Title="The Honest Weather App">
+            <phone:PivotItem Header="present" Margin="12,10,12,0">
+                <StackPanel x:Name="StackPanel1" Orientation="Horizontal" RenderTransformOrigin="0.5,0.5">
+                    <StackPanel.RenderTransform>
+                        <CompositeTransform TranslateX="0"/>
+                    </StackPanel.RenderTransform>
+                    <TextBlock x:Name="WeatherText1" Height="334" TextWrapping="Wrap" Text="123456" Width="457" FontFamily="/HonestWeatherApp;component/Assets/Bebas Neue.ttf#Bebas Neue" FontSize="72" Margin="0,22,0,0" RenderTransformOrigin="0.5,0.5" TextAlignment="Center" HorizontalAlignment="Center" >
+                        <TextBlock.RenderTransform>
+                            <CompositeTransform TranslateY="-115"/>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+
+                    <TextBlock x:Name="WeatherText2" HorizontalAlignment="Left" Height="330" TextWrapping="Wrap" Text="32° C" VerticalAlignment="Top" Width="456" FontFamily="/HonestWeatherApp;component/Assets/Bebas Neue.ttf#Bebas Neue" FontSize="55" RenderTransformOrigin="0.5,0.5" Foreground="White" Margin="0,50,0,0" TextAlignment="Center" >
+                        <TextBlock.RenderTransform>
+                            <CompositeTransform TranslateX="-458" TranslateY="356"/>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                    <TextBlock x:Name="WeatherText3" HorizontalAlignment="Left" Height="330" TextWrapping="Wrap" Text="Clear/Sunny" VerticalAlignment="Top" Width="456" FontFamily="/HonestWeatherApp;component/Assets/Bebas Neue.ttf#Bebas Neue" FontSize="48" RenderTransformOrigin="0.5,0.5" Foreground="White" Margin="0,50,0,0" TextAlignment="Center" >
+                        <TextBlock.RenderTransform>
+                            <CompositeTransform TranslateX="-913" TranslateY="408"/>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                    <TextBlock x:Name="WeatherText4" HorizontalAlignment="Left" Height="330" TextWrapping="Wrap" Text="You live in Delhi" VerticalAlignment="Top" Width="456" FontFamily="/HonestWeatherApp;component/Assets/Bebas Neue.ttf#Bebas Neue" FontSize="36" RenderTransformOrigin="0.5,0.5" Margin="0,50,0,0" TextAlignment="Center" Foreground="White" >
+                        <TextBlock.RenderTransform>
+                            <CompositeTransform TranslateX="-1369" TranslateY="460"/>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                    <TextBlock x:Name="LoadingText1" HorizontalAlignment="Left" Height="330" TextWrapping="Wrap" Text="Fetching the obvious, please wait" VerticalAlignment="Top" Width="456" FontFamily="/HonestWeatherApp;component/Assets/Bebas Neue.ttf#Bebas Neue" FontSize="36" RenderTransformOrigin="0.5,0.5" Foreground="White" Margin="0,50,0,0" TextAlignment="Center" >
+                        <TextBlock.RenderTransform>
+                            <CompositeTransform TranslateX="-1825" TranslateY="200"/>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                    <ProgressBar x:Name="ProgressBar1" IsIndeterminate="True" Margin="0,95,0,0" Width="452">
+                        <ProgressBar.RenderTransform>
+                            <CompositeTransform TranslateX="-2279" TranslateY="-50"/>
+                        </ProgressBar.RenderTransform>
+                    </ProgressBar>
+                </StackPanel>
+            </phone:PivotItem>
+            <phone:PivotItem Header="forecast">
+                <StackPanel Orientation="Horizontal" RenderTransformOrigin="0.5,0.5" >
+                    <StackPanel.RenderTransform>
+                        <CompositeTransform TranslateY="3"/>
+                    </StackPanel.RenderTransform>
+                    <TextBlock Text="Today" FontFamily="/HonestWeatherApp;component/Assets/Bebas Neue.ttf#Bebas Neue" Width="455" FontSize="60" Foreground="White" TextAlignment="Center"/>
+                    <TextBlock x:Name="fTextBox1" Text="21° C Min / 31° C Max" FontFamily="/HonestWeatherApp;component/Assets/Bebas Neue.ttf#Bebas Neue" Width="455" FontSize="48" RenderTransformOrigin="0.5,0.5" Foreground="#FFFF7400" TextAlignment="Center">
+                        <TextBlock.RenderTransform>
+                            <CompositeTransform TranslateX="-454" TranslateY="55"/>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                    <TextBlock x:Name="fTextBox2" Text="81% humidity" FontFamily="/HonestWeatherApp;component/Assets/Bebas Neue.ttf#Bebas Neue" Width="455" FontSize="36" Foreground="White" RenderTransformOrigin="0.5,0.5" TextAlignment="Center">
+                        <TextBlock.RenderTransform>
+                            <CompositeTransform TranslateX="-910" TranslateY="110"/>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+
+                    <TextBlock Text="Tomorrow" FontFamily="/HonestWeatherApp;component/Assets/Bebas Neue.ttf#Bebas Neue" Width="455" FontSize="60" Foreground="White" TextAlignment="Center" RenderTransformOrigin="0.5,0.5">
+                        <TextBlock.RenderTransform>
+                            <CompositeTransform TranslateX="-1364" TranslateY="173"/>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                    <TextBlock x:Name="fTextBox3" Text="22° C Min / 29° C Max" FontFamily="/HonestWeatherApp;component/Assets/Bebas Neue.ttf#Bebas Neue" Width="455" FontSize="48" RenderTransformOrigin="0.5,0.5" Foreground="#FFFF7400" TextAlignment="Center">
+                        <TextBlock.RenderTransform>
+                            <CompositeTransform TranslateX="-1819" TranslateY="231"/>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                    <TextBlock x:Name="fTextBox4" Text="87% humidity" FontFamily="/HonestWeatherApp;component/Assets/Bebas Neue.ttf#Bebas Neue" Width="455" FontSize="36" Foreground="White" RenderTransformOrigin="0.5,0.5" TextAlignment="Center">
+                        <TextBlock.RenderTransform>
+                            <CompositeTransform TranslateX="-2274" TranslateY="284"/>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+
+                    <TextBlock Text="Day After Tomorrow" FontFamily="/HonestWeatherApp;component/Assets/Bebas Neue.ttf#Bebas Neue" Width="455" FontSize="60" Foreground="White" TextAlignment="Center" RenderTransformOrigin="0.5,0.5">
+                        <TextBlock.RenderTransform>
+                            <CompositeTransform TranslateX="-2729" TranslateY="343"/>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                    <TextBlock x:Name="fTextBox5" Text="18° C Min / 39° C Max" FontFamily="/HonestWeatherApp;component/Assets/Bebas Neue.ttf#Bebas Neue" Width="455" FontSize="48" RenderTransformOrigin="0.5,0.5" Foreground="#FFFF7400" TextAlignment="Center">
+                        <TextBlock.RenderTransform>
+                            <CompositeTransform TranslateX="-3184" TranslateY="401"/>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                    <TextBlock x:Name="fTextBox6" Text="85% humidity" FontFamily="/HonestWeatherApp;component/Assets/Bebas Neue.ttf#Bebas Neue" Width="455" FontSize="36" Foreground="White" RenderTransformOrigin="0.5,0.5" TextAlignment="Center">
+                        <TextBlock.RenderTransform>
+                            <CompositeTransform TranslateX="-3639" TranslateY="452"/>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                </StackPanel>
+
+
+            </phone:PivotItem>
+        </phone:Pivot>
+
+    </Grid>
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="False" Opacity="1.0" Mode="Minimized" >
+            <shell:ApplicationBarIconButton x:Name="SettingsAppButton" IconUri="/Assets/feature.settings.png" Text="settings" Click="Button1_Click" />
+            <shell:ApplicationBarIconButton x:Name="RefreshAppButton1" IconUri="/Assets/refresh.png" Text="refresh" Click="Button2_Click" IsEnabled="True" />
+            <shell:ApplicationBarIconButton x:Name="ShareAppButton2" IconUri="/Assets/share.png" Text="share" Click="Button3_Click" IsEnabled="True" />
+            <shell:ApplicationBarIconButton x:Name="AboutButton1" IconUri="/Assets/questionmark.png" Text="about" Click="Button4_Click" IsEnabled="True" />
+
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+</phone:PhoneApplicationPage>

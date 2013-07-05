@@ -1,0 +1,76 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="HonestWeatherApp.About"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <!--Pivot Control-->
+
+        <phone:Pivot Title="The Honest Weather App">
+            <!--Pivot item one-->
+            <phone:PivotItem Header="about">
+                <StackPanel>
+                    <TextBlock Text="The Honest Weather App" FontSize="36" Foreground="#FF18A1DF"></TextBlock>
+                    <TextBlock Text="by Suyash Srijan" FontSize="24" Foreground="White" RenderTransformOrigin="0.5,0.5">
+                        <TextBlock.RenderTransform>
+                            <CompositeTransform TranslateY="5"/>
+                        </TextBlock.RenderTransform></TextBlock>
+                    <TextBlock x:Name="TextBlock1" Text="www.suyashsrijan.com" FontSize="30" Foreground="#FF18A1DF" RenderTransformOrigin="0.5,0.5">
+                        <TextBlock.RenderTransform>
+                            <CompositeTransform TranslateY="4"/>
+                        </TextBlock.RenderTransform></TextBlock>
+                    <TextBlock Text="Version: 1.0.0.0" FontSize="24" Foreground="White" RenderTransformOrigin="0.5,0.5">
+                        <TextBlock.RenderTransform>
+                            <CompositeTransform TranslateY="25"/>
+                        </TextBlock.RenderTransform></TextBlock>
+                    <TextBlock x:Name="TextBlock2" Text="Review this app" FontSize="24" Foreground="#FF18A1DF" RenderTransformOrigin="0.5,0.5">
+                        <TextBlock.RenderTransform>
+                            <CompositeTransform TranslateY="22"/>
+                        </TextBlock.RenderTransform></TextBlock>
+                    <TextBlock x:Name="TextBlock3" Text="Feedback: suyashsrijan@outlook.com" FontSize="24" Foreground="#FF18A1DF" RenderTransformOrigin="0.5,0.5">
+                        <TextBlock.RenderTransform>
+                            <CompositeTransform TranslateY="20"/>
+                        </TextBlock.RenderTransform></TextBlock>
+                    <TextBlock TextWrapping="Wrap" Text="This application uses the OpenWeatherMap API to get weather and forecast data but is not endorsed or certified by OpenWeatherMap" FontSize="22" Foreground="#FF646464" RenderTransformOrigin="0.5,0.5">
+                        <TextBlock.RenderTransform>
+                            <CompositeTransform TranslateY="22"/>
+                        </TextBlock.RenderTransform></TextBlock>
+
+                </StackPanel>
+            </phone:PivotItem>
+
+
+            <!--Pivot item three-->
+            <phone:PivotItem Header="credits">
+                <StackPanel>
+                    <TextBlock Text="Splash Screen: Prajwal Seth (prajwalseth.in)" TextWrapping="Wrap"></TextBlock>
+                    <TextBlock Text="Idea/Inspiration: Tobias van Schneider and TheMarcus" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5">
+                        <TextBlock.RenderTransform>
+                            <CompositeTransform TranslateY="9"/>
+                        </TextBlock.RenderTransform></TextBlock>
+                    <TextBlock Text="Icon: PixelKit (pixelkit.com)" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5">
+                        <TextBlock.RenderTransform>
+                            <CompositeTransform TranslateY="12"/>
+                        </TextBlock.RenderTransform></TextBlock>
+                    <TextBlock Text="API: OpenWeatherMap (openweathermap.org)" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5">
+                        <TextBlock.RenderTransform>
+                            <CompositeTransform TranslateY="15"/>
+                        </TextBlock.RenderTransform></TextBlock>
+
+                </StackPanel>
+            </phone:PivotItem>
+        </phone:Pivot>
+    </Grid>
+
+</phone:PhoneApplicationPage>

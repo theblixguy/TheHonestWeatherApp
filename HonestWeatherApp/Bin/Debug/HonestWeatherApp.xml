@@ -1,0 +1,118 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+HonestWeatherApp
+</name>
+</assembly>
+<members>
+<member name="T:HonestWeatherApp.LocalizedStrings">
+	<summary>
+ Provides access to string resources.
+ </summary>
+</member><member name="M:HonestWeatherApp.MainPage.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="P:HonestWeatherApp.AppResources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:HonestWeatherApp.AppResources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:HonestWeatherApp.AppResources.ResourceFlowDirection">
+	<summary>
+  Looks up a localized string similar to LeftToRight.
+</summary>
+</member><member name="P:HonestWeatherApp.AppResources.ResourceLanguage">
+	<summary>
+  Looks up a localized string similar to us-EN.
+</summary>
+</member><member name="P:HonestWeatherApp.AppResources.ApplicationTitle">
+	<summary>
+  Looks up a localized string similar to MY APPLICATION.
+</summary>
+</member><member name="P:HonestWeatherApp.AppResources.SampleProperty">
+	<summary>
+  Looks up a localized string similar to Sample Runtime Property Value.
+</summary>
+</member><member name="P:HonestWeatherApp.AppResources.AppBarButtonText">
+	<summary>
+  Looks up a localized string similar to button text.
+</summary>
+</member><member name="P:HonestWeatherApp.AppResources.AppBarMenuItemText">
+	<summary>
+  Looks up a localized string similar to Menu Item.
+</summary>
+</member><member name="T:HonestWeatherApp.AppResources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:HonestWeatherApp.App.ViewModel">
+	<summary>
+ A static ViewModel used by the views to bind against.
+ </summary>
+	<returns>The MainViewModel object.</returns>
+</member><member name="P:HonestWeatherApp.App.RootFrame">
+	<summary>
+ Provides easy access to the root frame of the Phone Application.
+ </summary>
+	<returns>The root frame of the Phone Application.</returns>
+</member><member name="M:HonestWeatherApp.App.#ctor">
+	<summary>
+ Constructor for the Application object.
+ </summary>
+</member><member name="P:HonestWeatherApp.MainViewModel.Items">
+	<summary>
+ A collection for ItemViewModel objects.
+ </summary>
+</member><member name="P:HonestWeatherApp.MainViewModel.SampleProperty">
+	<summary>
+ Sample ViewModel property; this property is used in the view to display its value using a Binding
+ </summary>
+	<returns></returns>
+</member><member name="P:HonestWeatherApp.MainViewModel.LocalizedSampleProperty">
+	<summary>
+ Sample property that returns a localized string
+ </summary>
+</member><member name="M:HonestWeatherApp.MainViewModel.LoadData">
+	<summary>
+ Creates and adds a few ItemViewModel objects into the Items collection.
+ </summary>
+</member><member name="M:HonestWeatherApp.App.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="M:HonestWeatherApp.About.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="M:HonestWeatherApp.Settings.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="P:HonestWeatherApp.ItemViewModel.LineOne">
+	<summary>
+ Sample ViewModel property; this property is used in the view to display its value using a Binding.
+ </summary>
+	<returns></returns>
+</member><member name="P:HonestWeatherApp.ItemViewModel.LineTwo">
+	<summary>
+ Sample ViewModel property; this property is used in the view to display its value using a Binding.
+ </summary>
+	<returns></returns>
+</member><member name="P:HonestWeatherApp.ItemViewModel.LineThree">
+	<summary>
+ Sample ViewModel property; this property is used in the view to display its value using a Binding.
+ </summary>
+	<returns></returns>
+</member><member name="M:HonestWeatherApp.ForecastPeice.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member>
+</members>
+</doc>
